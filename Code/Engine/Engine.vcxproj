@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugInline|Win32">
+      <Configuration>DebugInline</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugInline|x64">
+      <Configuration>DebugInline</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Tools Debug|Win32">
+      <Configuration>Tools Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Tools Debug|x64">
+      <Configuration>Tools Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Tools Release|Win32">
+      <Configuration>Tools Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Tools Release|x64">
+      <Configuration>Tools Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThirdParty\stb\stb_image.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\base64\base64.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\miniz.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\tinyxml2.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxEllipse.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxImage.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxImageLayer.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxLayer.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxMap.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxObject.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxObjectGroup.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxPolygon.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxPolyline.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxProperty.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxPropertySet.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxTerrain.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxTerrainArray.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxTile.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxTileLayer.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxTileOffset.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxTileset.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\TmxUtil.cpp" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\adler32.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\compress.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\crc32.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\deflate.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\gzclose.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\gzlib.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\gzread.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\gzwrite.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\infback.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\inffast.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\inflate.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\inftrees.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\trees.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\uncompr.c" />
+    <ClCompile Include="..\ThirdParty\TMXParser\zlib\zutil.c" />
+    <ClCompile Include="..\ThirdParty\XMLParser\XMLParser.cpp" />
+    <ClCompile Include="Audio\AudioSystem.cpp" />
+    <ClCompile Include="Core\BinaryStream.cpp" />
+    <ClCompile Include="Core\Configuration.cpp" />
+    <ClCompile Include="Core\DevConsole.cpp" />
+    <ClCompile Include="Core\EngineBase.cpp" />
+    <ClCompile Include="Core\ErrorWarningAssert.cpp" />
+    <ClCompile Include="Core\FileBinaryStream.cpp" />
+    <ClCompile Include="Core\FileUtils.cpp" />
+    <ClCompile Include="Core\Interval.cpp" />
+    <ClCompile Include="Core\Noise.cpp" />
+    <ClCompile Include="Core\Performance\Callstack.cpp" />
+    <ClCompile Include="Core\Performance\CriticalSection.cpp" />
+    <ClCompile Include="Core\Performance\Job.cpp" />
+    <ClCompile Include="Core\Performance\JobRendering.cpp" />
+    <ClCompile Include="Core\Performance\JobThreadLogger.cpp" />
+    <ClCompile Include="Core\Performance\Memory.cpp" />
+    <ClCompile Include="Core\Performance\PerformanceCommon.cpp" />
+    <ClCompile Include="Core\Performance\ProfilerReport.cpp" />
+    <ClCompile Include="Core\Performance\ProfilerSystem.cpp" />
+    <ClCompile Include="Core\Performance\Signal.cpp" />
+    <ClCompile Include="Core\Performance\Thread.cpp" />
+    <ClCompile Include="Core\Performance\ThreadLogger.cpp" />
+    <ClCompile Include="Core\Rgba.cpp" />
+    <ClCompile Include="Core\StringUtils.cpp" />
+    <ClCompile Include="Core\Time.cpp" />
+    <ClCompile Include="Core\Timer.cpp" />
+    <ClCompile Include="Core\Window.cpp" />
+    <ClCompile Include="EngineCommon.cpp" />
+    <ClCompile Include="Input\InputSystem.cpp" />
+    <ClCompile Include="Input\XboxController.cpp" />
+    <ClCompile Include="Math\AABB2D.cpp" />
+    <ClCompile Include="Math\AABB3D.cpp" />
+    <ClCompile Include="Math\Disc2D.cpp" />
+    <ClCompile Include="Math\IntVector2.cpp" />
+    <ClCompile Include="Math\IntVector3.cpp" />
+    <ClCompile Include="Math\IntVector4.cpp" />
+    <ClCompile Include="Math\LineSegment2D.cpp" />
+    <ClCompile Include="Math\LineSegment3D.cpp" />
+    <ClCompile Include="Math\MathUtils.cpp" />
+    <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="Math\MatrixStack.cpp" />
+    <ClCompile Include="Math\OBB2D.cpp" />
+    <ClCompile Include="Math\Quaternion.cpp" />
+    <ClCompile Include="Math\Sphere3D.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
+    <ClCompile Include="Network\LoopBackConnection.cpp" />
+    <ClCompile Include="Network\Net.cpp" />
+    <ClCompile Include="Network\NetAddress.cpp" />
+    <ClCompile Include="Network\NetConnection.cpp" />
+    <ClCompile Include="Network\NetMessage.cpp" />
+    <ClCompile Include="Network\NetMessageDefinition.cpp" />
+    <ClCompile Include="Network\NetObject.cpp" />
+    <ClCompile Include="Network\NetObjectSystem.cpp" />
+    <ClCompile Include="Network\NetObjectTypeDefinition.cpp" />
+    <ClCompile Include="Network\NetSession.cpp" />
+    <ClCompile Include="Network\TCPConnection.cpp" />
+    <ClCompile Include="Network\TCPSession.cpp" />
+    <ClCompile Include="Network\TCPSocket.cpp" />
+    <ClCompile Include="Renderer\BitmapFont.cpp" />
+    <ClCompile Include="Renderer\Font.cpp" />
+    <ClCompile Include="Renderer\Image.cpp" />
+    <ClCompile Include="Renderer\Mesh.cpp" />
+    <ClCompile Include="Renderer\MeshBuilder.cpp" />
+    <ClCompile Include="Renderer\Motion.cpp" />
+    <ClCompile Include="Renderer\Pose.cpp" />
+    <ClCompile Include="Renderer\Renderer.cpp" />
+    <ClCompile Include="Renderer\RHI\BlendState.cpp" />
+    <ClCompile Include="Renderer\RHI\ComputeShader.cpp" />
+    <ClCompile Include="Renderer\RHI\ComputeShaderJob.cpp" />
+    <ClCompile Include="Renderer\RHI\ConstantBuffer.cpp" />
+    <ClCompile Include="Renderer\RHI\DepthStencilState.cpp" />
+    <ClCompile Include="Renderer\RHI\DX11.cpp" />
+    <ClCompile Include="Renderer\RHI\IndexBuffer.cpp" />
+    <ClCompile Include="Renderer\RHI\OBJModel.cpp" />
+    <ClCompile Include="Renderer\RHI\RasterState.cpp" />
+    <ClCompile Include="Renderer\RHI\RHIDevice.cpp" />
+    <ClCompile Include="Renderer\RHI\RHIDeviceContext.cpp" />
+    <ClCompile Include="Renderer\RHI\RHIInstance.cpp" />
+    <ClCompile Include="Renderer\RHI\RHIOutput.cpp" />
+    <ClCompile Include="Renderer\RHI\RHITexture2D.cpp" />
+    <ClCompile Include="Renderer\RHI\Sampler.cpp" />
+    <ClCompile Include="Renderer\RHI\ShaderProgram.cpp" />
+    <ClCompile Include="Renderer\RHI\SimpleRenderer.cpp" />
+    <ClCompile Include="Renderer\RHI\StructuredBuffer.cpp" />
+    <ClCompile Include="Renderer\RHI\VertexBuffer.cpp" />
+    <ClCompile Include="Renderer\Skeleton.cpp" />
+    <ClCompile Include="Renderer\SkeletonInstance.cpp" />
+    <ClCompile Include="Renderer\SpriteAnimation.cpp" />
+    <ClCompile Include="Renderer\SpriteSheet.cpp" />
+    <ClCompile Include="Renderer\Texture.cpp" />
+    <ClCompile Include="Tools\FBX\fbx.cpp" />
+    <ClCompile Include="Tools\Python\EmbeddedPython.cpp" />
+    <ClCompile Include="Tools\Python\PyModule.cpp" />
+    <ClCompile Include="Tools\XML\XMLFileParser.cpp" />
+    <ClCompile Include="UI\UIButton.cpp" />
+    <ClCompile Include="UI\UICanvas.cpp" />
+    <ClCompile Include="UI\UIElement.cpp" />
+    <ClCompile Include="UI\UIPanel.cpp" />
+    <ClCompile Include="UI\UIProgressBar.cpp" />
+    <ClCompile Include="UI\UISprite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ThirdParty\glext\glext.h" />
+    <ClInclude Include="..\ThirdParty\glext\wglext.h" />
+    <ClInclude Include="..\ThirdParty\stb\stb_image.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\base64\base64.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\tinyxml2.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\Tmx.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxEllipse.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxImage.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxImageLayer.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxLayer.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxMap.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxMapTile.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxObject.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxObjectGroup.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxPoint.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxPolygon.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxPolyline.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxProperty.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxPropertySet.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxTerrain.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxTerrainArray.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxTile.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxTileLayer.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxTileOffset.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxTileset.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\TmxUtil.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\crc32.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\deflate.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\gzguts.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\inffast.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\inffixed.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\inflate.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\inftrees.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\trees.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\zconf.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\zlib.h" />
+    <ClInclude Include="..\ThirdParty\TMXParser\zlib\zutil.h" />
+    <ClInclude Include="..\ThirdParty\XMLParser\XMLParser.hpp" />
+    <ClInclude Include="Audio\AudioSystem.hpp" />
+    <ClInclude Include="Core\BinaryStream.hpp" />
+    <ClInclude Include="Core\Configuration.hpp" />
+    <ClInclude Include="Core\DevConsole.hpp" />
+    <ClInclude Include="Core\EngineBase.hpp" />
+    <ClInclude Include="Core\EngineCommon.hpp" />
+    <ClInclude Include="Core\EngineConfig.hpp" />
+    <ClInclude Include="Core\ErrorWarningAssert.hpp" />
+    <ClInclude Include="Core\FileBinaryStream.hpp" />
+    <ClInclude Include="Core\FileUtils.hpp" />
+    <ClInclude Include="Core\Interval.hpp" />
+    <ClInclude Include="Core\Noise.hpp" />
+    <ClInclude Include="Core\Performance\Atomic.hpp" />
+    <ClInclude Include="Core\Performance\BuildConfig.hpp" />
+    <ClInclude Include="Core\Performance\Callstack.hpp" />
+    <ClInclude Include="Core\Performance\CriticalSection.hpp" />
+    <ClInclude Include="Core\Performance\Event.hpp" />
+    <ClInclude Include="Core\Performance\Job.hpp" />
+    <ClInclude Include="Core\Performance\JobRendering.hpp" />
+    <ClInclude Include="Core\Performance\JobThreadLogger.hpp" />
+    <ClInclude Include="Core\Performance\Memory.hpp" />
+    <ClInclude Include="Core\Performance\PerformanceCommon.hpp" />
+    <ClInclude Include="Core\Performance\PerformanceUtility.hpp" />
+    <ClInclude Include="Core\Performance\ProfilerReport.hpp" />
+    <ClInclude Include="Core\Performance\ProfilerSystem.hpp" />
+    <ClInclude Include="Core\Performance\Signal.hpp" />
+    <ClInclude Include="Core\Performance\Thread.hpp" />
+    <ClInclude Include="Core\Performance\ThreadLogger.hpp" />
+    <ClInclude Include="Core\Performance\ThreadSafeQueue.hpp" />
+    <ClInclude Include="Core\ProfileLogScope.hpp" />
+    <ClInclude Include="Core\Rgba.hpp" />
+    <ClInclude Include="Core\StringUtils.hpp" />
+    <ClInclude Include="Core\Time.hpp" />
+    <ClInclude Include="Core\Timer.hpp" />
+    <ClInclude Include="Core\Window.hpp" />
+    <ClInclude Include="Input\InputSystem.hpp" />
+    <ClInclude Include="Input\XboxController.hpp" />
+    <ClInclude Include="Math\AABB2D.hpp" />
+    <ClInclude Include="Math\AABB3D.hpp" />
+    <ClInclude Include="Math\Disc2D.hpp" />
+    <ClInclude Include="Math\IntVector2.hpp" />
+    <ClInclude Include="Math\IntVector3.hpp" />
+    <ClInclude Include="Math\IntVector4.hpp" />
+    <ClInclude Include="Math\LineSegment2D.hpp" />
+    <ClInclude Include="Math\LineSegment3D.hpp" />
+    <ClInclude Include="Math\MathUtils.hpp" />
+    <ClInclude Include="Math\Matrix4.hpp" />
+    <ClInclude Include="Math\MatrixStack.hpp" />
+    <ClInclude Include="Math\OBB2D.hpp" />
+    <ClInclude Include="Math\Quaternion.hpp" />
+    <ClInclude Include="Math\Sphere3D.hpp" />
+    <ClInclude Include="Math\Vector2.hpp" />
+    <ClInclude Include="Math\Vector3.hpp" />
+    <ClInclude Include="Math\Vector4.hpp" />
+    <ClInclude Include="Network\LoopBackConnection.hpp" />
+    <ClInclude Include="Network\Net.hpp" />
+    <ClInclude Include="Network\NetAddress.hpp" />
+    <ClInclude Include="Network\NetConnection.hpp" />
+    <ClInclude Include="Network\NetMessage.hpp" />
+    <ClInclude Include="Network\NetMessageDefinition.hpp" />
+    <ClInclude Include="Network\NetObject.hpp" />
+    <ClInclude Include="Network\NetObjectSystem.hpp" />
+    <ClInclude Include="Network\NetObjectTypeDefinition.hpp" />
+    <ClInclude Include="Network\NetSession.hpp" />
+    <ClInclude Include="Network\NetworkCommon.hpp" />
+    <ClInclude Include="Network\TCPConnection.hpp" />
+    <ClInclude Include="Network\TCPSession.hpp" />
+    <ClInclude Include="Network\TCPSocket.hpp" />
+    <ClInclude Include="Renderer\BitmapFont.hpp" />
+    <ClInclude Include="Renderer\Font.hpp" />
+    <ClInclude Include="Renderer\Image.hpp" />
+    <ClInclude Include="Renderer\Mesh.hpp" />
+    <ClInclude Include="Renderer\MeshBuilder.hpp" />
+    <ClInclude Include="Renderer\Motion.hpp" />
+    <ClInclude Include="Renderer\OpenGLExtensions.hpp" />
+    <ClInclude Include="Renderer\Pose.hpp" />
+    <ClInclude Include="Renderer\Renderer.hpp" />
+    <ClInclude Include="Renderer\RHI\BlendState.hpp" />
+    <ClInclude Include="Renderer\RHI\ComputeShader.hpp" />
+    <ClInclude Include="Renderer\RHI\ComputeShaderJob.hpp" />
+    <ClInclude Include="Renderer\RHI\ConstantBuffer.hpp" />
+    <ClInclude Include="Renderer\RHI\DefaultShader.hpp" />
+    <ClInclude Include="Renderer\RHI\DepthStencilState.hpp" />
+    <ClInclude Include="Renderer\RHI\DX11.hpp" />
+    <ClInclude Include="Renderer\RHI\IndexBuffer.hpp" />
+    <ClInclude Include="Renderer\RHI\OBJModel.hpp" />
+    <ClInclude Include="Renderer\RHI\RasterState.hpp" />
+    <ClInclude Include="Renderer\RHI\RHI.hpp" />
+    <ClInclude Include="Renderer\RHI\RHIDevice.hpp" />
+    <ClInclude Include="Renderer\RHI\RHIDeviceContext.hpp" />
+    <ClInclude Include="Renderer\RHI\RHIInstance.hpp" />
+    <ClInclude Include="Renderer\RHI\RHIOutput.hpp" />
+    <ClInclude Include="Renderer\RHI\RHITypes.hpp" />
+    <ClInclude Include="Renderer\RHI\RHITexture2D.hpp" />
+    <ClInclude Include="Renderer\RHI\Sampler.hpp" />
+    <ClInclude Include="Renderer\RHI\ShaderProgram.hpp" />
+    <ClInclude Include="Renderer\RHI\SimpleRenderer.hpp" />
+    <ClInclude Include="Renderer\RHI\StructuredBuffer.hpp" />
+    <ClInclude Include="Renderer\RHI\VertexBuffer.hpp" />
+    <ClInclude Include="Renderer\Skeleton.hpp" />
+    <ClInclude Include="Renderer\SkeletonInstance.hpp" />
+    <ClInclude Include="Renderer\SpriteAnimation.hpp" />
+    <ClInclude Include="Renderer\SpriteSheet.hpp" />
+    <ClInclude Include="Renderer\Texture.hpp" />
+    <ClInclude Include="Tools\FBX\fbx.h" />
+    <ClInclude Include="Tools\Python\EmbeddedPython.hpp" />
+    <ClInclude Include="Tools\Python\PyModule.hpp" />
+    <ClInclude Include="Tools\Python\PythonIncludes.hpp" />
+    <ClInclude Include="Tools\XML\XMLFileParser.hpp" />
+    <ClInclude Include="UI\UIButton.hpp" />
+    <ClInclude Include="UI\UICanvas.hpp" />
+    <ClInclude Include="UI\UIElement.hpp" />
+    <ClInclude Include="UI\UIPanel.hpp" />
+    <ClInclude Include="UI\UIProgressBar.hpp" />
+    <ClInclude Include="UI\UISprite.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ThirdParty\TMXParser\tmxparser.pc.in" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E23325D5-0EA8-4EF5-81ED-A01D6AF9BF70}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Python35-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python35-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Python35-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python35-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Python35-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python35-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Python35-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python35-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>C:\Program Files %28x86%29\Python35-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python35-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>D:\Perforce\C26\Students\johnnguyen\Projects\Engine\Code\ThirdParty\Python\pybind11-master\include\pybind11;C:\Program Files %28x86%29\Python36-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python36-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|x64'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>D:\Perforce\C26\Students\johnnguyen\Projects\Engine\Code\ThirdParty\Python\pybind11-master\include\pybind11;C:\Program Files %28x86%29\Python36-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python36-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|x64'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>D:\Perforce\C26\Students\johnnguyen\Projects\Engine\Code\ThirdParty\Python\pybind11-master\include\pybind11;C:\Program Files %28x86%29\Python36-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python36-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>D:\Perforce\C26\Students\johnnguyen\Projects\Engine\Code\ThirdParty\Python\pybind11-master\include\pybind11;C:\Program Files %28x86%29\Python36-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python36-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|x64'">
+    <OutDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(Platform)_$(Configuration)\</IntDir>
+    <IncludePath>D:\Perforce\C26\Students\johnnguyen\Projects\Engine\Code\ThirdParty\Python\pybind11-master\include\pybind11;C:\Program Files %28x86%29\Python36-32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Python36-32\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Engine\Code\ThirdParty\Python\pybind11\include\;$(SolutionDir)..\..\Engine\Code\;$(SolutionDir)Code\</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);TOOLS_BUILD</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Engine\Code\ThirdParty\Python\pybind11\include\;$(SolutionDir)..\..\Engine\Code\;$(SolutionDir)Code\</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Engine\Code\ThirdParty\Python\pybind11\include\;$(SolutionDir)..\..\Engine\Code\;$(SolutionDir)Code\</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tools Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions);TOOLS_BUILD</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugInline|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Engine\Code\ThirdParty\Python\pybind11\include\;$(SolutionDir)..\..\Engine\Code\;$(SolutionDir)Code\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\Engine\Code\ThirdParty\Python\pybind11\include\;$(SolutionDir)..\..\Engine\Code\;$(SolutionDir)Code\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tools Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../Engine/Code/;$(SolutionDir)Code/</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
